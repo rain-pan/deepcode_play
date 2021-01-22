@@ -1,6 +1,6 @@
 CC=gcc
 
-all: echod echoc
+all: echod echoc loop_on_float
 
 echod:echo_double.c
 	$(CC) $? -o $@ 
@@ -8,3 +8,5 @@ echod:echo_double.c
 echoc:echo.c	
 	$(CC) $? -o $@ 
 
+loop_on_float:loop_on_float.c
+	$(CC) $? -o $@ 
